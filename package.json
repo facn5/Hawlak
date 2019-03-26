@@ -1,0 +1,30 @@
+{
+  "name": "hawlak",
+  "version": "1.0.0",
+  "description": "free-time app with auto-complete",
+  "main": "server.js",
+  "scripts": {
+    "test": "node ./test/tap-test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facn5/Hawlak.git"
+  },
+  "keywords": [
+    "hawlak",
+    "restaurants",
+    "bars",
+    "hotels",
+    "events"
+  ],
+  "author": "Faris, John, Majd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facn5/Hawlak/issues"
+  },
+  "homepage": "https://github.com/facn5/Hawlak#readme",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.10.1"
+  }
+}
