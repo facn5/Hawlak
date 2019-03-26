@@ -1,14 +1,9 @@
 const http = require('http');
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 4000;
-const handler = require('./handler.js')
+const router = require('./router.js')
 
-const server = http.createServer(handler);
-
-
-
-
-
+const server = http.createServer(router);
 
 server.listen(port);
 
