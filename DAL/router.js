@@ -1,11 +1,11 @@
-const fs = require('fs')
-const path = require('path')
+const fs = require('fs');
+const path = require('path');
+
 var url = require('url');
-const handlers = require('./handlers')
+const handlers = require('./handlers');
 
 
 const router = (request, response) => {
-  // const url = request.url;
 
   let path = url.parse(request.url).pathname;
 
@@ -18,8 +18,8 @@ const router = (request, response) => {
       handlers.handleStyle(request, response);
       break;
     default:
-      response.writeHead(404)
-      response.end("Not found")
+      response.writeHead(404);
+      response.end("Not found");
       break;
   }
 }

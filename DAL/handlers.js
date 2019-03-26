@@ -33,34 +33,6 @@ const handleStyle = (request, response) => {
   })
 }
 
-
-const handlePublic = (request, response) => {
-  const url = request.url;
-  const extension = url.split('.')[1]
-  const exType = {
-    html: 'text/html',
-    css: 'text/css',
-    js: 'application/javascript',
-    ico: 'image/x-icon'
-  }
-
-  let filePath = path.join(__dirname, "..", url)
-  fs.readFile(filePath, (err, file) => {
-    if (err) {
-      response.writeHead(500, {
-        'content-type': 'text/html'
-      })
-      response.end("<h1>SERVER ERROR : 500</h1>")
-    } else {
-      response.writeHead(200, {
-        'content-type': exType[extension]
-      })
-      response.end(file)
-    }
-  });
-
-}
-
 module.exports = {
   handleHome,
   handleStyle
