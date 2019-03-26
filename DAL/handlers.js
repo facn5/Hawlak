@@ -19,6 +19,20 @@ const handleHome = (request, response) => {
   )
 }
 
+const handleStyle = (request, response) => {
+  fs.readFile(__dirname + "/../UI/style.css", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500 csafoasfg")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/css"
+      });
+      response.end(file);
+    }
+  })
+}
+
 
 const handlePublic = (request, response) => {
   const url = request.url;
@@ -48,5 +62,6 @@ const handlePublic = (request, response) => {
 }
 
 module.exports = {
-  handleHome
+  handleHome,
+  handleStyle
 }

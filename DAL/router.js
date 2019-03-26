@@ -14,10 +14,13 @@ const router = (request, response) => {
     case '/':
       handlers.handleHome(request, response);
       break;
+    case '/style.css':
+      handlers.handleStyle(request, response);
+      break;
     default:
       response.writeHead(404)
       response.end("Not found")
-
+      break;
   }
 }
 
