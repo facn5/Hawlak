@@ -33,6 +33,8 @@ const handleStyle = (request, response) => {
   })
 }
 
+
+
 module.exports = {
   handleHome,
   handleStyle
