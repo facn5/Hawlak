@@ -1,5 +1,7 @@
 const fs = require('fs')
 const path = require('path')
+const filter=require("../BL/filter")
+const jsonfile=require("../DB/restList")
 
 const handleHome = (request, response) => {
   let filePath = path.join(__dirname, "..", "UI", "index.html")
@@ -50,17 +52,19 @@ const handleIndexJs = (request, response) => {
 }
 
 const handleRestorant = (request, response) => {
-  fs.readFile(__dirname + "/../DB/restList.json", function(error, file) {
-    if (error) {
-      response.writeHead(500)
-      response.end("500 csafoasfg")
-    } else {
-      response.writeHead(200, {
-        "Content-Type": "text/javascript"
-      });
-      response.end(file);
-    }
-  })
+let arr=jsonfile;
+let word="Man";
+let filtered =
+filter.findWords(arr,word)
+response.writeHead(200,{
+  "content-type":"text/html"
+
+});
+filtered=JSON.stringify(filtered)
+response.end(filtered)
+
+
+
 }
 const handleHotels = (request, response) => {
   fs.readFile(__dirname + "", function(error, file) {
@@ -89,6 +93,7 @@ const handleOtherThings = (request, response) => {
     }
   })
 }
+
 
 module.exports = {
   handleHome,
