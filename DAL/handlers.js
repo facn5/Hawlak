@@ -34,6 +34,7 @@ const handleStyle = (request, response) => {
 }
 
 
+
 const handleIndexJs = (request, response) => {
   fs.readFile(__dirname + "/../BL/index.js", function(error, file) {
     if (error) {
@@ -88,6 +89,7 @@ const handleOtherThings = (request, response) => {
     }
   })
 }
+
 module.exports = {
   handleHome,
   handleStyle,
