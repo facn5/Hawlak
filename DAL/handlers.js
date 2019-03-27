@@ -34,6 +34,20 @@ const handleStyle = (request, response) => {
   })
 }
 
+const handleBG = (request, response) => {
+  fs.readFile(__dirname + "/../UI/bg.jpg", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "image/jpeg"
+      });
+      response.end(file);
+    }
+  })
+}
+
 const handleDom = (request, response) => {
   fs.readFile(__dirname + "/../UI/dom.js", function(error, file) {
     if (error) {
@@ -52,7 +66,7 @@ const handleIndexJs = (request, response) => {
   fs.readFile(__dirname + "/../BL/index.js", function(error, file) {
     if (error) {
       response.writeHead(500)
-      response.end("500 csafoasfg")
+      response.end("500")
     } else {
       response.writeHead(200, {
         "Content-Type": "text/javascript"
@@ -101,6 +115,7 @@ const handleOtherThings = (request, response) => {
 
 
 module.exports = {
+  handleBG,
   handleDom,
   handleHome,
   handleStyle,

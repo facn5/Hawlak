@@ -8,22 +8,25 @@
 </head>
 
 <body>
+
   <header>
-    <h1>Hawlak</h1>
+    <h1>Hawliek</h1>
   </header>
 
 
-  <input type="button" name="hotles" value="Hotels" onclick="myFunction(this.name)">
-  <input type="button" name="restaurants" value="Restaurants" onclick="myFunction(this.name)">
-  <input type="button" name="otherStuff" value="Stuff To Do" onclick="myFunction(this.name)">
+  <input type="button" name="hotles" value="Hotels" onclick="myFunction(this.name)" class="btn">
+  <input type="button" name="restaurants" value="Restaurants" onclick="myFunction(this.name)" class="btn">
+  <input type="button" name="otherStuff" value="Stuff To Do" onclick="myFunction(this.name)" class="btn">
 
 
   <div id="search" class="search">
-    <input type="text" id="keyword" name="catg" placeholder="XXX">
-    <div id="container"></div>
-    <button type="submit" id="submit">Submit</button>
-
+    <input type="text" id="keyword" name="catg" placeholder="XXX" autocomplete="off" class="btn">
+    <button type="submit" id="submit" class="btn">search</button>
+    <div id="container">
+    </div>
   </div>
+
+  <div class="bgimg"></div>
 
 </body>
 
@@ -31,4 +34,5 @@
 <script src="/domMe" type="text/javascript">
 
 </script>
+
 </html>
