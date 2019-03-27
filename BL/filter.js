@@ -7,6 +7,5 @@ let autocompleteFunctions = {
 }
 
 
-if (typeof module !== 'undefined') {
+
   module.exports = autocompleteFunctions;
-}
