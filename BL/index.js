@@ -1,14 +1,7 @@
 let cata = "";
 
 function myFunction(cat) {
-
-  // var x = document.getElementById("search");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
-
+  document.getElementById("search").style.display = "block";
   switch (cat) {
     case 'hotles':
       cata = cat
@@ -26,9 +19,15 @@ function myFunction(cat) {
 }
 
 keyword.oninput = function() {
-  let data = getData(cata + "/" + keyword.value);
+  let list = getData(cata + "/" + keyword.value);
+  createList(list);
 };
 
+function createList(list) {
+  let input = document.getElementById("autocmplt");
+  let newEle = document.createElement("span");
+  newEle.textContent = list;
+}
 
 function getData(cat) {
   var url = 'http://localhost:4000/';
@@ -38,6 +37,5 @@ function getData(cat) {
     })
     .then(function(myJson) {
       console.log(JSON.stringify(myJson));
-      createDiv(myJson);
     });
 }

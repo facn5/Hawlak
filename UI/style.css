@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0 auto;
   text-align: center;
 }
@@ -6,4 +6,8 @@ body{
 .search {
   display: block;
   height: 200px;
+}
+
+#search {
+  display: none;
 }
