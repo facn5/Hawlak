@@ -33,7 +33,66 @@ const handleStyle = (request, response) => {
   })
 }
 
+
+const handleIndexJs = (request, response) => {
+  fs.readFile(__dirname + "/../BL/index.js", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500 csafoasfg")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/javascript"
+      });
+      response.end(file);
+    }
+  })
+}
+
+const handleRestorant = (request, response) => {
+  fs.readFile(__dirname + "/../DB/restList.json", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500 csafoasfg")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/javascript"
+      });
+      response.end(file);
+    }
+  })
+}
+const handleHotels = (request, response) => {
+  fs.readFile(__dirname + "", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500 csafoasfg")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/javascript"
+      });
+      response.end(file);
+    }
+  })
+}
+
+const handleOtherThings = (request, response) => {
+  fs.readFile(__dirname + "", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500 csafoasfg")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/javascript"
+      });
+      response.end(file);
+    }
+  })
+}
 module.exports = {
   handleHome,
-  handleStyle
+  handleStyle,
+  handleIndexJs,
+  handleRestorant,
+  handleHotels,
+  handleOtherThings
 }
