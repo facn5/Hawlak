@@ -5,13 +5,10 @@ const handler = require('./handler.js')
 
 const server = http.createServer(handler);
 
+server.listen(port, () => {
+  console.log(`Server running at port ` + port);
+});
 
-
-
-
-
-server.listen(port);
-
-console.log('server running on port 4000');
-
-module.exports = { server: server};
+module.exports = {
+  server: server
+};
