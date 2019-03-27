@@ -17,6 +17,18 @@ const router = (request, response) => {
     case '/style.css':
       handlers.handleStyle(request, response);
       break;
+    case '/BL/index.js':
+      handlers.handleIndexJs(request, response);
+      break;
+    case '/restaurants':
+      handlers.handleRestorant(request, response);
+      break;
+    case '/hotels':
+      handlers.handleRestorant(request, response);
+      break;
+    case '/otherStuff':
+      handlers.handleOtherThings(request, response);
+      break;
     default:
       response.writeHead(404);
       response.end("Not found");

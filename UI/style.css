@@ -3,17 +3,25 @@ body{
   text-align: center;
 }
 
-header{
+/* header {
   display: block;
   position: fixed;
   text-align: center;
   width: 100%;
   border-bottom: 1px solid black;
   padding: 0% 0% 10% 0%;
-}
+} */
 
-.search{
+.search {
   /* margin-top: 12%; */
   display: block;
   height: 200px;
+}
+
+*/ #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
 }
