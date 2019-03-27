@@ -1,4 +1,10 @@
-body{
+html {
+  background: #a9e1ef;
+  background: linear-gradient(to right, #6dd5ed, #a9e1ef);
+  color: #36454f;
+}
+
+body {
   margin: 0 auto;
   text-align: center;
 }
@@ -6,4 +12,8 @@ body{
 .search {
   display: block;
   height: 200px;
+}
+
+h1 {
+  font-family: 'Tajawal', sans-serif;
 }
