@@ -34,7 +34,19 @@ const handleStyle = (request, response) => {
   })
 }
 
-
+const handleDom = (request, response) => {
+  fs.readFile(__dirname + "/../UI/dom.js", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "text/javascript"
+      });
+      response.end(file);
+    }
+  })
+}
 
 const handleIndexJs = (request, response) => {
   fs.readFile(__dirname + "/../BL/index.js", function(error, file) {
@@ -89,6 +101,7 @@ const handleOtherThings = (request, response) => {
 
 
 module.exports = {
+  handleDom,
   handleHome,
   handleStyle,
   handleIndexJs,

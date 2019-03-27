@@ -26,7 +26,7 @@ function myFunction(cat) {
 }
 
 keyword.oninput = function() {
-  getData(cata + "/" + keyword.value);
+  let data = getData(cata + "/" + keyword.value);
 };
 
 
@@ -38,5 +38,6 @@ function getData(cat) {
     })
     .then(function(myJson) {
       console.log(JSON.stringify(myJson));
+      createDiv(myJson);
     });
 }
