@@ -3,17 +3,7 @@ body{
   text-align: center;
 }
 
-header{
-  display: block;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-  border-bottom: 1px solid black;
-  padding: 0% 0% 10% 0%;
-}
-
-.search{
-  /* margin-top: 12%; */
+.search {
   display: block;
   height: 200px;
 }

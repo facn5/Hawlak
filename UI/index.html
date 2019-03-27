@@ -11,16 +11,23 @@
   <header>
     <h1>Hawlak</h1>
   </header>
-  <div class="search"></div>
-  <form action="">
-    <input type="text" name="catg">
-    <button type="submit" name="submit"></button>
-  </form>
-  <form action="">
-    <input type="text" name="search">
-    <button type="submit" name="search"></button>
-  </form>
+
+
+  <input type="button" name="hotles" value="Hotels" onclick="myFunction(this.name)">
+  <input type="button" name="restaurants" value="Restaurants" onclick="myFunction(this.name)">
+  <input type="button" name="otherStuff" value="Stuff To Do" onclick="myFunction(this.name)">
+
+
+  <div id="search" class="search">
+    <input type="text" id="keyword" name="catg" placeholder="XXX">
+    <button type="submit" id="submit">Submit</button>
+
+  </div>
+
+
   <!-- </div> -->
 </body>
+
+<script src="./BL/index.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
