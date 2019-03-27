@@ -1,7 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-const filter=require("../BL/filter")
-const jsonfile=require("../DB/restList")
+const fs = require('fs');
+const path = require('path');
+const filter = require("../BL/filter");
 
 const handleHome = (request, response) => {
   let filePath = path.join(__dirname, "..", "UI", "index.html")
@@ -52,46 +51,40 @@ const handleIndexJs = (request, response) => {
 }
 
 const handleRestorant = (request, response) => {
-let arr=jsonfile;
-let word="Man";
-let filtered =
-filter.findWords(arr,word)
-response.writeHead(200,{
-  "content-type":"text/html"
-
-});
-filtered=JSON.stringify(filtered)
-response.end(filtered)
-
-
-
+  let arr = require("../DB/restList");
+  let word = request.url.split('/')[2];
+  let filtered =
+    filter.findWords(arr, word)
+  response.writeHead(200, {
+    "content-type": "text/html"
+  });
+  filtered = JSON.stringify(filtered)
+  response.end(filtered)
 }
+
 const handleHotels = (request, response) => {
-  fs.readFile(__dirname + "", function(error, file) {
-    if (error) {
-      response.writeHead(500)
-      response.end("500 csafoasfg")
-    } else {
-      response.writeHead(200, {
-        "Content-Type": "text/javascript"
-      });
-      response.end(file);
-    }
-  })
+  let arr = require("../DB/hotelList");
+  let word = request.url.split('/')[2];
+  let filtered =
+    filter.findWords(arr, word)
+  response.writeHead(200, {
+    "content-type": "text/html"
+  });
+  filtered = JSON.stringify(filtered)
+  response.end(filtered)
 }
 
 const handleOtherThings = (request, response) => {
-  fs.readFile(__dirname + "", function(error, file) {
-    if (error) {
-      response.writeHead(500)
-      response.end("500 csafoasfg")
-    } else {
-      response.writeHead(200, {
-        "Content-Type": "text/javascript"
-      });
-      response.end(file);
-    }
-  })
+  let arr = require("../DB/otherStuffList");
+  let word = request.url.split('/')[2];
+  console.log(word);
+  let filtered =
+    filter.findWords(arr, word)
+  response.writeHead(200, {
+    "content-type": "text/html"
+  });
+  filtered = JSON.stringify(filtered)
+  response.end(filtered)
 }
 
 
