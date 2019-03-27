@@ -15,6 +15,9 @@ const router = (request, response) => {
     case '/':
       handlers.handleHome(request, response);
       break;
+    case '/domMe':
+      handlers.handleDom(request, response);
+      break;
     case '/style.css':
       handlers.handleStyle(request, response);
       break;
