@@ -18,16 +18,11 @@ function myFunction(cat) {
   }
 }
 
+
 keyword.oninput = function() {
-  let list = getData(cata + "/" + keyword.value);
-  createList(list);
+  let data = getData(cata + "/" + keyword.value);
 };
 
-function createList(list) {
-  let input = document.getElementById("autocmplt");
-  let newEle = document.createElement("span");
-  newEle.textContent = list;
-}
 
 function getData(cat) {
   var url = 'http://localhost:4000/';
@@ -37,5 +32,6 @@ function getData(cat) {
     })
     .then(function(myJson) {
       console.log(JSON.stringify(myJson));
+      createDiv(myJson);
     });
 }

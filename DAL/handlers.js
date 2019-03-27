@@ -9,7 +9,7 @@ const handleHome = (request, response) => {
     (error, file) => {
       if (error) {
         response.writeHead(500)
-        response.end("500 error")
+        response.end("500")
       } else {
         response.writeHead(200, {
           "content-type": "text/html"
@@ -24,10 +24,24 @@ const handleStyle = (request, response) => {
   fs.readFile(__dirname + "/../UI/style.css", function(error, file) {
     if (error) {
       response.writeHead(500)
-      response.end("500 csafoasfg")
+      response.end("500")
     } else {
       response.writeHead(200, {
         "Content-Type": "text/css"
+      });
+      response.end(file);
+    }
+  })
+}
+
+const handleBG = (request, response) => {
+  fs.readFile(__dirname + "/../UI/bg.jpg", function(error, file) {
+    if (error) {
+      response.writeHead(500)
+      response.end("500")
+    } else {
+      response.writeHead(200, {
+        "Content-Type": "image/jpeg"
       });
       response.end(file);
     }
@@ -52,7 +66,7 @@ const handleIndexJs = (request, response) => {
   fs.readFile(__dirname + "/../BL/index.js", function(error, file) {
     if (error) {
       response.writeHead(500)
-      response.end("500 csafoasfg")
+      response.end("500")
     } else {
       response.writeHead(200, {
         "Content-Type": "text/javascript"
@@ -101,6 +115,7 @@ const handleOtherThings = (request, response) => {
 
 
 module.exports = {
+  handleBG,
   handleDom,
   handleHome,
   handleStyle,

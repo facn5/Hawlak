@@ -10,6 +10,8 @@ const router = (request, response) => {
   let path = url.parse(request.url).pathname;
   // path = '/restaurants/value'
   path = path.indexOf("restaurants")!== -1?'/restaurants':path
+  path = path.indexOf("hotels")!== -1?'/hotels':path
+  path = path.indexOf("otherStuff")!== -1?'/otherStuff':path
   switch (path) {
 
     case '/':
@@ -21,6 +23,9 @@ const router = (request, response) => {
     case '/style.css':
       handlers.handleStyle(request, response);
       break;
+      case '/bg.jpg':
+        handlers.handleBG(request, response);
+        break;
     case '/BL/index.js':
       handlers.handleIndexJs(request, response);
       break;
