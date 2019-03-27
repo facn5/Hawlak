@@ -1,6 +1,6 @@
-function myFunction(cat) {
+let cata = "";
 
-  console.log(cat);
+function myFunction(cat) {
 
   // var x = document.getElementById("search");
   // if (x.style.display === "none") {
@@ -11,17 +11,24 @@ function myFunction(cat) {
 
   switch (cat) {
     case 'hotles':
-      getData(cat);
+      cata = cat
       break;
     case 'restaurants':
-      getData(cat);
+      console.log(cat);
+      cata = cat;
+      console.log("cata = " + cata);
       break;
     case 'otherStuff':
-      getData(cat);
+      cata = cat;
       break;
     default:
   }
 }
+
+keyword.oninput = function() {
+  getData(cata + "/" + keyword.value);
+};
+
 
 function getData(cat) {
   var url = 'http://localhost:4000/';

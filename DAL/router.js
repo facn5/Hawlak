@@ -8,7 +8,8 @@ const handlers = require('./handlers');
 const router = (request, response) => {
 
   let path = url.parse(request.url).pathname;
-
+  // path = '/restaurants/value'
+  path = path.indexOf("restaurants")!== -1?'/restaurants':path
   switch (path) {
 
     case '/':
@@ -20,7 +21,7 @@ const router = (request, response) => {
     case '/BL/index.js':
       handlers.handleIndexJs(request, response);
       break;
-    case '/restaurants':
+    case '/restaurants' :
       handlers.handleRestorant(request, response);
       break;
     case '/hotels':
