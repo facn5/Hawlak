@@ -25,8 +25,7 @@ keyword.oninput = function() {
 
 
 function getData(cat) {
-  var url = 'http://localhost:4000/';
-  fetch(url + cat)
+  fetch(cat)
     .then(function(response) {
       return response.json();
     })

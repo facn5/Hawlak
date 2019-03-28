@@ -4,8 +4,8 @@
   "description": "free-time app with auto-complete",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon ./DAL/server.js",
-    "test": "node test.js | tap-spec"
+    "start": "node ./DAL/server.js",
+    "test": "node ./test/tap-test.js | tap-spec"
   },
   "repository": {
     "type": "git",
