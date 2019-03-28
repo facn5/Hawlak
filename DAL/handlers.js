@@ -2,13 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const filter = require("../BL/filter");
 
-const headers = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
-  'Access-Control-Max-Age': 2592000, // 30 days
-  /** add other headers too */
-};
-
 const handleHome = (request, response) => {
   let filePath = path.join(__dirname, "..", "UI", "index.html")
   fs.readFile(
@@ -27,6 +20,7 @@ const handleHome = (request, response) => {
     }
   )
 }
+
 const handleFavicon = (request, response) => {
   let filePath = path.join(__dirname, "./favicon.png")
   fs.readFile(
@@ -119,8 +113,9 @@ const handleRestorant = (request, response) => {
 }
 
 const handleHotels = (request, response) => {
-  let arr = require("../DB/hotelList");
+  let arr = require("../DB/hotelsList");
   let word = request.url.split('/')[2];
+  console.log(word);
   let filtered =
     filter.findWords(arr, word)
   response.writeHead(200, {
@@ -134,7 +129,6 @@ const handleHotels = (request, response) => {
 const handleOtherThings = (request, response) => {
   let arr = require("../DB/otherStuffList");
   let word = request.url.split('/')[2];
-  console.log(word);
   let filtered =
     filter.findWords(arr, word)
   response.writeHead(200, {

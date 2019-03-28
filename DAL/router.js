@@ -3,13 +3,10 @@ const path = require('path');
 
 var url = require('url');
 const handlers = require('./handlers');
-
-
 const router = (request, response) => {
 
   let path = request.url;
-  console.log(path);
-  // // path = '/restaurants/value'
+
   path = path.indexOf("restaurants") !== -1 ? '/restaurants' : path;
   path = path.indexOf("hotels") !== -1 ? '/hotels' : path;
   path = path.indexOf("otherStuff") !== -1 ? '/otherStuff' : path;
@@ -37,7 +34,7 @@ const router = (request, response) => {
       handlers.handleRestorant(request, response);
       break;
     case '/hotels':
-      handlers.handleRestorant(request, response);
+      handlers.handleHotels(request, response);
       break;
     case '/otherStuff':
       handlers.handleOtherThings(request, response);

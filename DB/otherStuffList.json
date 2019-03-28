@@ -1,26 +1,73 @@
-[
-{"Church of the Annunciation": "Nazareth"},
-{"Mary of Nazareth International Center": "Nazareth"},
-{"St. Joseph's Church": "Nazareth"},
-{"Salesian Monastery and Church of Jesus the Adolescent": "Nazareth"},
-{"Synagogue Church": "Nazareth"},
-{"St. Gabriel's Church": "Nazareth"},
-{"Mary's Well": "Nazareth"},
-{"Ancient Bath House": "Nazareth"},
-{"Mensa Christi Church": "Nazareth"},
-{"Founders and Coders": "Nazareth"},
-{"Franciscan Church": "Kfar Kanna"},
-{"Baha'i Gardens": "Haifa"},
-{"German Colony": "Haifa"},
-{"Stella Maris Monastery": "Haifa"},
-{"Elijah's Cave": "Haifa"},
-{"Wadi Nisnas Market": "Haifa"},
-{"Louis Promenade": "Haifa"},
-{"Mada Tech Science Museum": "Haifa"},
-{"Haifa Art Museum": "Haifa"},
-{"Stella Maris Carmelite Monastery": "Haifa"},
-{"German Colony": "Haifa"},
-{"Ursula Malbin Sculpture Garden": "Haifa"},
-{"Beit Hagefen Arab-Jewish Cultural Center": "Haifa"},
-{"Technion Israel Institute of Technology": "Haifa"},
+[{
+    "Church of the Annunciation": "Nazareth"
+  },
+  {
+    "Mary of Nazareth International Center": "Nazareth"
+  },
+  {
+    "St. Joseph's Church": "Nazareth"
+  },
+  {
+    "Salesian Monastery and Church of Jesus the Adolescent": "Nazareth"
+  },
+  {
+    "Synagogue Church": "Nazareth"
+  },
+  {
+    "St. Gabriel's Church": "Nazareth"
+  },
+  {
+    "Mary's Well": "Nazareth"
+  },
+  {
+    "Ancient Bath House": "Nazareth"
+  },
+  {
+    "Mensa Christi Church": "Nazareth"
+  },
+  {
+    "Founders and Coders": "Nazareth"
+  },
+  {
+    "Franciscan Church": "Kfar Kanna"
+  },
+  {
+    "Baha'i Gardens": "Haifa"
+  },
+  {
+    "German Colony": "Haifa"
+  },
+  {
+    "Stella Maris Monastery": "Haifa"
+  },
+  {
+    "Elijah's Cave": "Haifa"
+  },
+  {
+    "Wadi Nisnas Market": "Haifa"
+  },
+  {
+    "Louis Promenade": "Haifa"
+  },
+  {
+    "Mada Tech Science Museum": "Haifa"
+  },
+  {
+    "Haifa Art Museum": "Haifa"
+  },
+  {
+    "Stella Maris Carmelite Monastery": "Haifa"
+  },
+  {
+    "German Colony": "Haifa"
+  },
+  {
+    "Ursula Malbin Sculpture Garden": "Haifa"
+  },
+  {
+    "Beit Hagefen Arab-Jewish Cultural Center": "Haifa"
+  },
+  {
+    "Technion Israel Institute of Technology": "Haifa"
+  }
 ]

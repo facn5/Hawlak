@@ -1,23 +1,67 @@
-[{"Tishreen": "Nazareth"},
-{"Quarter Cafe": "Jerusalem"},
-{"Fattoush": "Haifa"},
-{"Cafe Landwer": "Nazareth Illit"},
-{"Giraffe": "Haifa"},
-{"Derech Hagefen": "Jerusalem"},
-{"Manta Ray": "Jaffa"},
-{"Kitchen Market": "Tel Aviv"},
-{"Coffee Annan": "Golan"},
-{"Magdalena": "Tiberias"},
-{"Eataliano Dalla Costa": "Haifa"},
-{"El Marsa": "Acre"},
-{"Ezba": "Ramah"},
-{"Rola": "Haifa"},
-{"Maadali Turkish Market": "Acre"},
-{"El Kheir": "Haifa"},
-{"Tabun Fatma": "Zarzir"},
-{"Shtroudl": "Haifa"},
-{"Abu Shukri Hummus": "Jerusalem"},
-{"Ein El Wadi": "Haifa"},
-{"The Eucalyptus": "Jerusalem"},
-{"Ezba": "Ramah"}
+[{
+    "Tishreen": "Nazareth"
+  },
+  {
+    "Quarter Cafe": "Jerusalem"
+  },
+  {
+    "Fattoush": "Haifa"
+  },
+  {
+    "Cafe Landwer": "Nazareth Illit"
+  },
+  {
+    "Giraffe": "Haifa"
+  },
+  {
+    "Derech Hagefen": "Jerusalem"
+  },
+  {
+    "Manta Ray": "Jaffa"
+  },
+  {
+    "Kitchen Market": "Tel Aviv"
+  },
+  {
+    "Coffee Annan": "Golan"
+  },
+  {
+    "Magdalena": "Tiberias"
+  },
+  {
+    "Eataliano Dalla Costa": "Haifa"
+  },
+  {
+    "El Marsa": "Acre"
+  },
+  {
+    "Ezba": "Ramah"
+  },
+  {
+    "Rola": "Haifa"
+  },
+  {
+    "Maadali Turkish Market": "Acre"
+  },
+  {
+    "El Kheir": "Haifa"
+  },
+  {
+    "Tabun Fatma": "Zarzir"
+  },
+  {
+    "Shtroudl": "Haifa"
+  },
+  {
+    "Abu Shukri Hummus": "Jerusalem"
+  },
+  {
+    "Ein El Wadi": "Haifa"
+  },
+  {
+    "The Eucalyptus": "Jerusalem"
+  },
+  {
+    "Ezba": "Ramah"
+  }
 ]
