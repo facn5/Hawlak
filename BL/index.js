@@ -1,28 +1,24 @@
-let cata = "";
+let cate = "";
 
-function myFunction(cat) {
+function enableSearch(cat) {
   document.getElementById("search").style.display = "block";
   switch (cat) {
-    case 'hotles':
-      cata = cat
+    case 'hotels':
+      cate = cat;
       break;
     case 'restaurants':
-      console.log(cat);
-      cata = cat;
-      console.log("cata = " + cata);
+      cate = cat;
       break;
     case 'otherStuff':
-      cata = cat;
+      cate = cat;
       break;
     default:
   }
 }
 
-
 keyword.oninput = function() {
-  let data = getData(cata + "/" + keyword.value);
+  let data = getData(cate + "/" + keyword.value);
 };
-
 
 function getData(cat) {
   fetch(cat)
@@ -30,7 +26,6 @@ function getData(cat) {
       return response.json();
     })
     .then(function(myJson) {
-      console.log(JSON.stringify(myJson));
       createDiv(myJson);
     });
 }

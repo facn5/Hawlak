@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node ./DAL/server.js",
+    "run": "nodemon ./DAL/server.js",
     "test": "node ./test/tap-test.js | tap-spec"
   },
   "repository": {

@@ -1,33 +1,97 @@
-[{"The Scots Hotel": "Tiberias"},
-{"Elma Arts Complex Luxury Hotel": "Zichron Ya'akov"},
-{"Mizpe Hayamim Spa Hotel": "Galilee"},
-{"Pinchas and Gaston Holiday Home": "Galilee"},
-{"Canaan Village Boutique Hotel and Spa": "Golan Heights"},
-{"Grand Vista Boutique Hotel and Spa": "Kfar Yuval"},
-{"Maskit Boutique": "Liman"},
-{"Boutique Hotel Tamarin": "Rosha Pinna"},
-{"The Efendi Hotel": "Acre"},
-{"Akkotel": "Acre"},
-{"Templers Boutique Hotel": "Haifa"},
-{"Crowne Plaza Haifa": "Haifa"},
-{"Haifa Bay View Hotel": "Haifa"},
-{"Dan Panorama Haifa Hotel": "Haifa"},
-{"The Colony Hotel": "Haifa"},
-{"Bay Club": "Haifa"},
-{"Leonardo Plaza Haifa": "Haifa"},
-{"Sea Plaza Hotel Haifa": "Haifa"},
-{"Waldorf Astoria Jerusalem": "Jerusalem"},
-{"The American Colony Hotel": "Jerusalem"},
-{"Dan Panorama Jerusalem Hotel": "Jerusalem"},
-{"King David Hotel": "Jerusalem"},
-{"Kfar Hanokdim": "Arad"},
-{"Poli House": "Tel Aviv"},
-{"The Setai": "Lake Kinneret"},
-{"U Coral Beach Club": "Eilat"},
-{"Diaghilev Live Art Boutique Hotel": "Tel Aviv"},
-{"Leonardo Art Hotel": "Tel Aviv"},
-{"Elma Hotel and Arts Complex": "Zichron Ya'akov"},
-{"Hagoshrim Hotel and Nature": "Upper Galilee"},
-{"The Norman": "Tel Aviv"},
-{"Fauzi Azar Inn": "Nazareth"}
+[{
+    "The Scots Hotel": "Tiberias"
+  },
+  {
+    "Elma Arts Complex Luxury Hotel": "Zichron Ya'akov"
+  },
+  {
+    "Mizpe Hayamim Spa Hotel": "Galilee"
+  },
+  {
+    "Pinchas and Gaston Holiday Home": "Galilee"
+  },
+  {
+    "Canaan Village Boutique Hotel and Spa": "Golan Heights"
+  },
+  {
+    "Grand Vista Boutique Hotel and Spa": "Kfar Yuval"
+  },
+  {
+    "Maskit Boutique": "Liman"
+  },
+  {
+    "Boutique Hotel Tamarin": "Rosha Pinna"
+  },
+  {
+    "The Efendi Hotel": "Acre"
+  },
+  {
+    "Akkotel": "Acre"
+  },
+  {
+    "Templers Boutique Hotel": "Haifa"
+  },
+  {
+    "Crowne Plaza Haifa": "Haifa"
+  },
+  {
+    "Haifa Bay View Hotel": "Haifa"
+  },
+  {
+    "Dan Panorama Haifa Hotel": "Haifa"
+  },
+  {
+    "The Colony Hotel": "Haifa"
+  },
+  {
+    "Bay Club": "Haifa"
+  },
+  {
+    "Leonardo Plaza Haifa": "Haifa"
+  },
+  {
+    "Sea Plaza Hotel Haifa": "Haifa"
+  },
+  {
+    "Waldorf Astoria Jerusalem": "Jerusalem"
+  },
+  {
+    "The American Colony Hotel": "Jerusalem"
+  },
+  {
+    "Dan Panorama Jerusalem Hotel": "Jerusalem"
+  },
+  {
+    "King David Hotel": "Jerusalem"
+  },
+  {
+    "Kfar Hanokdim": "Arad"
+  },
+  {
+    "Poli House": "Tel Aviv"
+  },
+  {
+    "The Setai": "Lake Kinneret"
+  },
+  {
+    "U Coral Beach Club": "Eilat"
+  },
+  {
+    "Diaghilev Live Art Boutique Hotel": "Tel Aviv"
+  },
+  {
+    "Leonardo Art Hotel": "Tel Aviv"
+  },
+  {
+    "Elma Hotel and Arts Complex": "Zichron Ya'akov"
+  },
+  {
+    "Hagoshrim Hotel and Nature": "Upper Galilee"
+  },
+  {
+    "The Norman": "Tel Aviv"
+  },
+  {
+    "Fauzi Azar Inn": "Nazareth"
+  }
 ]

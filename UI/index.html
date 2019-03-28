@@ -25,11 +25,9 @@
     <h1>حولك closer</h1>
   </header>
 
-
-  <input type="button" name="hotels" value="Hotels" onclick="myFunction(this.name)" class="btn">
-  <input type="button" name="restaurants" value="Restaurants" onclick="myFunction(this.name)" class="btn">
-  <input type="button" name="otherStuff" value="Stuff To Do" onclick="myFunction(this.name)" class="btn">
-
+  <input type="button" name="hotels" value="Hotels" onclick="enableSearch(this.name)" class="btn">
+  <input type="button" name="restaurants" value="Restaurants" onclick="enableSearch(this.name)" class="btn">
+  <input type="button" name="otherStuff" value="Stuff To Do" onclick="enableSearch(this.name)" class="btn">
 
   <div id="search" class="search">
     <input type="text" id="keyword" name="catg" placeholder="XXX" autocomplete="off" class="btn">
@@ -37,7 +35,6 @@
     <div id="container">
     </div>
   </div>
-
 
   <div class="bgimg"></div>
   <footer>FJM Solutions, Copyright 2019. All rights reserved.</footer>
