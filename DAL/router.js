@@ -7,8 +7,9 @@ const handlers = require('./handlers');
 
 const router = (request, response) => {
 
-  let path = url.parse(request.url).pathname;
-  // path = '/restaurants/value'
+  let path = request.url;
+  console.log(path);
+  // // path = '/restaurants/value'
   path = path.indexOf("restaurants") !== -1 ? '/restaurants' : path;
   path = path.indexOf("hotels") !== -1 ? '/hotels' : path;
   path = path.indexOf("otherStuff") !== -1 ? '/otherStuff' : path;
@@ -20,7 +21,7 @@ const router = (request, response) => {
     case '/domMe':
       handlers.handleDom(request, response);
       break;
-    case '/favicon.ico':
+    case '/favicon':
       handlers.handleFavicon(request, response);
       break;
     case '/style.css':
