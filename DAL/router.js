@@ -20,7 +20,7 @@ const router = (request, response) => {
     case '/domMe':
       handlers.handleDom(request, response);
       break;
-    case '/favicon':
+    case '/favicon.ico':
       handlers.handleFavicon(request, response);
       break;
     case '/style.css':
