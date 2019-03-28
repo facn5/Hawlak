@@ -7,7 +7,7 @@ const server = http.createServer(router);
 
 server.listen(port);
 
-console.log('server running on port 4000');
+console.log(`server running on ${port}`);
 
 module.exports = {
   server: server
