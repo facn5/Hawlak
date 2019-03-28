@@ -18,7 +18,7 @@ const handleHome = (request, response) => {
         response.writeHead(500)
         response.end("500")
       } else {
-        response.writeHead(200, headers, {
+        response.writeHead(200, {
 
           "content-type": "text/html"
         })
@@ -28,7 +28,7 @@ const handleHome = (request, response) => {
   )
 }
 const handleFavicon = (request, response) => {
-  let filePath = path.join(__dirname, "/favicon.ico")
+  let filePath = path.join(__dirname, "./favicon.png")
   fs.readFile(
     filePath,
     (error, file) => {
@@ -36,8 +36,7 @@ const handleFavicon = (request, response) => {
         response.writeHead(500)
         response.end("500")
       } else {
-        response.writeHead(200, headers, {
-
+        response.writeHead(200, {
           "content-type": "image/vnd.microsoft.icon"
         })
         response.end(file)
@@ -52,7 +51,7 @@ const handleStyle = (request, response) => {
       response.writeHead(500)
       response.end("500")
     } else {
-      response.writeHead(200, headers, {
+      response.writeHead(200, {
 
         "Content-Type": "text/css"
       });
@@ -67,7 +66,7 @@ const handleBG = (request, response) => {
       response.writeHead(500)
       response.end("500")
     } else {
-      response.writeHead(200, headers, {
+      response.writeHead(200, {
 
         "Content-Type": "image/jpeg"
       });
@@ -82,7 +81,7 @@ const handleDom = (request, response) => {
       response.writeHead(500)
       response.end("500")
     } else {
-      response.writeHead(200, headers, {
+      response.writeHead(200, {
 
         "Content-Type": "text/javascript"
       });
@@ -97,7 +96,7 @@ const handleIndexJs = (request, response) => {
       response.writeHead(500)
       response.end("500")
     } else {
-      response.writeHead(200, headers, {
+      response.writeHead(200, {
 
         "Content-Type": "text/javascript"
       });
@@ -111,7 +110,7 @@ const handleRestorant = (request, response) => {
   let word = request.url.split('/')[2];
   let filtered =
     filter.findWords(arr, word)
-  response.writeHead(200, headers, {
+  response.writeHead(200, {
 
     "content-type": "text/html"
   });
@@ -124,7 +123,7 @@ const handleHotels = (request, response) => {
   let word = request.url.split('/')[2];
   let filtered =
     filter.findWords(arr, word)
-  response.writeHead(200, headers, {
+  response.writeHead(200, {
 
     "content-type": "text/html"
   });
@@ -138,7 +137,7 @@ const handleOtherThings = (request, response) => {
   console.log(word);
   let filtered =
     filter.findWords(arr, word)
-  response.writeHead(200, headers, {
+  response.writeHead(200, {
 
     "content-type": "text/html"
   });
