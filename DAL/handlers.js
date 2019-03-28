@@ -2,6 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const filter = require("../BL/filter");
 
+const headers = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
+  'Access-Control-Max-Age': 2592000, // 30 days
+  /** add other headers too */
+};
+
 const handleHome = (request, response) => {
   let filePath = path.join(__dirname, "..", "UI", "index.html")
   fs.readFile(
@@ -12,6 +19,7 @@ const handleHome = (request, response) => {
         response.end("500")
       } else {
         response.writeHead(200, {
+          headers,
           "content-type": "text/html"
         })
         response.end(file)
@@ -29,6 +37,7 @@ const handleFavicon = (request, response) => {
         response.end("500")
       } else {
         response.writeHead(200, {
+          headers,
           "content-type": "image/vnd.microsoft.icon"
         })
         response.end(file)
@@ -44,6 +53,7 @@ const handleStyle = (request, response) => {
       response.end("500")
     } else {
       response.writeHead(200, {
+        headers,
         "Content-Type": "text/css"
       });
       response.end(file);
@@ -58,6 +68,7 @@ const handleBG = (request, response) => {
       response.end("500")
     } else {
       response.writeHead(200, {
+        headers,
         "Content-Type": "image/jpeg"
       });
       response.end(file);
@@ -72,6 +83,7 @@ const handleDom = (request, response) => {
       response.end("500")
     } else {
       response.writeHead(200, {
+        headers,
         "Content-Type": "text/javascript"
       });
       response.end(file);
@@ -86,6 +98,7 @@ const handleIndexJs = (request, response) => {
       response.end("500")
     } else {
       response.writeHead(200, {
+        headers,
         "Content-Type": "text/javascript"
       });
       response.end(file);
@@ -99,6 +112,7 @@ const handleRestorant = (request, response) => {
   let filtered =
     filter.findWords(arr, word)
   response.writeHead(200, {
+    headers,
     "content-type": "text/html"
   });
   filtered = JSON.stringify(filtered)
@@ -111,6 +125,7 @@ const handleHotels = (request, response) => {
   let filtered =
     filter.findWords(arr, word)
   response.writeHead(200, {
+    headers,
     "content-type": "text/html"
   });
   filtered = JSON.stringify(filtered)
@@ -124,6 +139,7 @@ const handleOtherThings = (request, response) => {
   let filtered =
     filter.findWords(arr, word)
   response.writeHead(200, {
+    headers,
     "content-type": "text/html"
   });
   filtered = JSON.stringify(filtered)
