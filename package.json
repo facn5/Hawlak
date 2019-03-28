@@ -4,7 +4,7 @@
   "description": "free-time app with auto-complete",
   "main": "server.js",
   "scripts": {
-    "start": "./DAL/server.js",
+    "start": "node ./DAL/server.js",
     "test": "node ./test/tap-test.js | tap-spec"
   },
   "repository": {
